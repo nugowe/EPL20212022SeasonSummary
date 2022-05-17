@@ -53,16 +53,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
    
 
-jobs:
-  destroy_workspace:
-    runs-on: ubuntu-latest
-    name: Destroy terraform workspace
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
 
-      - name: terraform destroy
-        uses: dflook/terraform-destroy@v1
-        with:
-          path: ${{ env.GITHUB_WORKSPACE }}
-          workspace: terraform
