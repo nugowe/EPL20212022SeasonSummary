@@ -17,21 +17,21 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
+  default     = "nosaugowe/epltablesummary:latest"
 }
 
 variable "app_port" {
   description = "Port exposed by the docker image to redirect traffic to"
-  default     = 3000
+  default     = 1030
 }
 
 variable "app_count" {
   description = "Number of docker containers to run"
-  default     = 3
+  default     = 1
 }
 
 variable "health_check_path" {
-  default = "/"
+  default = "/RelegatedTeams"
 }
 
 variable "fargate_cpu" {
