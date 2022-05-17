@@ -65,4 +65,4 @@ jobs:
         uses: dflook/terraform-destroy@v1
         with:
           path: ${{ env.GITHUB_WORKSPACE }}
-          workspace: 'terraform'  
+          workspace: terraform
