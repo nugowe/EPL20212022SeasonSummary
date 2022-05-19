@@ -6,8 +6,8 @@ terraform {
   backend "s3" {
     region  = "us-east-1"
     profile = "default"
-    key     = var.s3_bucket
-    bucket  = var.s3_bucket
+    key     = "epltablestatus_tfstate_bucket"
+    bucket  = "epltablestatus_tfstate_bucket"
   }
 }
 
