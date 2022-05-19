@@ -1,6 +1,6 @@
 # EPL20212022SeasonSummary
 
-![Screenshot from 2022-05-17 07-12-28](https://user-images.githubusercontent.com/25004712/168808222-6a343fa1-18c1-4501-98ca-f11fe32603db.png)
+![Screenshot from 2022-05-19 06-03-16](https://user-images.githubusercontent.com/25004712/169279028-d7479800-2455-4258-bb79-8672e52b938b.png)
 
 STEP 1: External API call triggers the Pipeline (Postman in my case)
 
