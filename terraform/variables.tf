@@ -44,3 +44,7 @@ variable "fargate_memory" {
   default     = "2048"
 }
 
+variable "s3_bucket" {
+  description = "s3 bucket name for storing file state"
+  default     = "epltablestatus_tfstate_bucket"
+}
