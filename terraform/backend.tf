@@ -6,8 +6,8 @@ terraform {
   backend "s3" {
     region  = "us-east-1"
     profile = "default"
-    key     = "epltablestatus_tfstate_bucket"
-    bucket  = "epltablestatus_tfstate_bucket"
+    key     = "testz-bucketz-eplpractice"
+    bucket  = "testz-bucketz-eplpractice"
   }
 }
 
