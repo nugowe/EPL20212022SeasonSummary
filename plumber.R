@@ -19,9 +19,10 @@ library(polite)
 url <- "https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League"
 
 
+
 session = bow(user_agent = "EPL-Table-Scrape", url)
 
-EPLTable <- scrape(session) %>% html_nodes("table.wikitable:nth-child(29)") %>% html_table()
+EPLTable <- scrape(session) %>% html_nodes("table.wikitable:nth-child(56)") %>% html_table()
 
 EPLTable <- as.data.frame(EPLTable)
 
@@ -44,8 +45,8 @@ function(EPLChampions = "") {
 #* @get /ChampionsLeagueTeams
 function(ChampionsLeagueTeams = "") {
   ChampionsLeagueCleanup <- EPLTable$Team[c(1:4)]
-  ChampionsLeagueCleanup1 <- gsub('.{4}$', '', ChampionsLeagueCleanup)
-  ChampionsLeagueTeams <- ChampionsLeagueCleanup1
+  #ChampionsLeagueCleanup1 <- gsub('.{4}$', '', ChampionsLeagueCleanup)
+  ChampionsLeagueTeams <- ChampionsLeagueCleanup
     
 }
 
@@ -54,7 +55,7 @@ function(ChampionsLeagueTeams = "") {
 #* @get /RelegatedTeams
 function(RelegatedTeams = "") {
   RelegatedTeamsCleanup <- EPLTable$Team[c(18:20)]
-  #RelegatedTeamsCleanup1 <- gsub('.{4}$', '', RelegatedTeamsCleanup)
+  RelegatedTeamsCleanup1 <- gsub('.{4}$', '', RelegatedTeamsCleanup)
   RelegatedTeams <- RelegatedTeamsCleanup
   
 }
