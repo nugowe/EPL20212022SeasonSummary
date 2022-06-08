@@ -31,7 +31,7 @@ variable "app_count" {
 }
 
 variable "health_check_path" {
-  default = "/RelegatedTeams"
+  default = "/"
 }
 
 variable "fargate_cpu" {
