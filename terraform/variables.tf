@@ -48,3 +48,13 @@ variable "s3_bucket" {
   description = "s3 bucket name for storing file state"
   default     = "epltablestatus_tfstate_bucket"
 }
+
+variable "s3_bucket_codebuild" {
+  description = "s3 bucket name for storing codebuild files"
+  default     = "codebuildbucket"
+}
+
+variable "codebuild_project_terraform_plan_name" {
+  description = "s3 bucket name for storing codebuild files"
+  default     = "PresentationDemo"
+}
